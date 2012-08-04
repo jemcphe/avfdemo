@@ -1,0 +1,90 @@
+body{
+    background-color: #f9f5e2;
+}
+
+h1, h2, h3, p, li{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #ed2929;
+//    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#787878));
+}
+
+header{
+    background-color: #000000;
+}
+
+header h1{
+    margin: 0px 0px 5px 10px;
+    padding-top: 10px;
+}
+header p{
+    font-weight: bold;
+    margin: 0px 0px 5px 10px;
+    padding-bottom: 10px;
+}
+#native{
+    width: 450px;
+    height: 300px;
+    float: left;
+    margin-bottom: 50px;
+}
+h2{
+    margin: 25px 0px 25px auto;
+}
+#vids{
+    width: 475px;
+    height: 210px;
+    float: left;
+    clear: both;
+}
+#vids img{
+    margin-top: 10px;
+    width: 155px;
+    height: 105px;
+}
+#discussion{
+    clear: right;
+    float: left;
+    height: 300px;
+}
+#discussion ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 5px ;
+}
+.button{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+#last_btn{
+    width: 300px;
+    height: 40px;
+}
+#apps{
+    
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 270px;
+    float: left;
+}
+#appBox{
+    border: 1px solid;
+    border-radius: 10px;
+    padding-top: 5px;
+    width: 270px;
+    height: 110px;
+    background-color: #000000;
+    width: 255px;
+}
+#idraft{
+    margin-right: 15px;
+    margin-left: 10px;
+    width: 105px;
+    height: 105px;
+}
+#getIt{
+    width: 105px;
+    height: 105px;
+    margin-left: 5px;
+}
