@@ -1,14 +1,27 @@
 body{
     background-color: #f9f5e2;
 }
-
 h1, h2, h3, p, li{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     color: #ed2929;
 //    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#787878));
 }
-
-header{
+.discussionPage{
+    width: 700px;
+    margin-left: 10px;
+}
+.discussionPage h3, .discussionPage li, .discussionPage p{
+    color: #000000;
+}
+h3{
+    margin-top: 0px;
+}
+#homebtn{
+    width: 100px;
+    height: 25px;
+    margin: 5px 0px;
+}
+.header{
     background-color: #000000;
 }
 
@@ -56,6 +69,9 @@ h2{
     width: 300px;
     height: 40px;
     margin-bottom: 25px;
+}
+a{
+    text-decoration: none;
 }
 #last_btn{
     width: 300px;
