@@ -23,17 +23,14 @@
 		
 	</head>
 	<!--Begin Body-->
-	<body id="addPlayer-page">
+	<body>
+		<!--Header Section-->
 		<!--Header Section-->
 		<header>
-			<div>
-				<h1 id="pageHeader">Add A Player</h1>
-			</div>
+			<img src="images/logo.png" alt="iDRAFT" id="logo" />
 		</header>
 		<!--Begin Form, fieldset, and legend-->
 		<form action="#" method="post" id="addPlayerForm">
-			<fieldset id="addPlayerFieldset"> <!--Creates box around containing material-->
-				<legend>Player Info</legend>
 				<ul id="errors"></ul>
 				<ul id="playerInfo">
 					<!--Select Position w/ dropdown option box-->
@@ -79,7 +76,6 @@
 						<textarea id="notes"></textarea>
 					</li>
 				</ul>
-			</fieldset>
 			<!--Submit Button-->
 			<input type="submit" onclick="showAlert(); return false;"value="Add Player" id="submit"/>
 		</form>

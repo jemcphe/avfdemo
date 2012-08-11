@@ -44,6 +44,7 @@
 		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		476C1DFF15D3609F00A88D0A /* native.js in Sources */ = {isa = PBXBuildFile; fileRef = 476C1DFE15D3609F00A88D0A /* native.js */; };
+		4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */ = {isa = PBXBuildFile; fileRef = 4784C2ED15D60AE6008D0753 /* discussion2.html */; };
 		478F3CAF15D07B5400E121C9 /* addItem.html in Resources */ = {isa = PBXBuildFile; fileRef = 478F3CAE15D07B5400E121C9 /* addItem.html */; };
 		478F3CC915D0883400E121C9 /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = 478F3CC815D0883400E121C9 /* main.js */; };
 /* End PBXBuildFile section */
@@ -122,6 +123,7 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* idraft-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idraft-Prefix.pch"; sourceTree = "<group>"; };
 		476C1DFE15D3609F00A88D0A /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = native.js; path = www/idraft/js/native.js; sourceTree = "<group>"; };
+		4784C2ED15D60AE6008D0753 /* discussion2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = discussion2.html; path = www/discussion2.html; sourceTree = "<group>"; };
 		478F3CAE15D07B5400E121C9 /* addItem.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addItem.html; path = www/getit/addItem.html; sourceTree = "<group>"; };
 		478F3CC815D0883400E121C9 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = www/getit/js/main.js; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* idraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "idraft-Info.plist"; path = "../idraft-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4784C2ED15D60AE6008D0753 /* discussion2.html */,
 				476C1DFE15D3609F00A88D0A /* native.js */,
 				478F3CC815D0883400E121C9 /* main.js */,
 				478F3CAE15D07B5400E121C9 /* addItem.html */,
@@ -422,6 +425,7 @@
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				478F3CAF15D07B5400E121C9 /* addItem.html in Resources */,
+				4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
