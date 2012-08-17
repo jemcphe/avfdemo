@@ -47,6 +47,10 @@
 		4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */ = {isa = PBXBuildFile; fileRef = 4784C2ED15D60AE6008D0753 /* discussion2.html */; };
 		478F3CAF15D07B5400E121C9 /* addItem.html in Resources */ = {isa = PBXBuildFile; fileRef = 478F3CAE15D07B5400E121C9 /* addItem.html */; };
 		478F3CC915D0883400E121C9 /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = 478F3CC815D0883400E121C9 /* main.js */; };
+		4797538815DC686300076114 /* league.js in Sources */ = {isa = PBXBuildFile; fileRef = 4797538715DC686300076114 /* league.js */; };
+		4797539615DCAE1400076114 /* myleagues.html in Resources */ = {isa = PBXBuildFile; fileRef = 4797539515DCAE1400076114 /* myleagues.html */; };
+		47BC03B115DC38B700C0FB30 /* wk2vid.html in Resources */ = {isa = PBXBuildFile; fileRef = 47BC03B015DC38B700C0FB30 /* wk2vid.html */; };
+		47CB20DC15DDF31B0077DB0D /* discussion3.html in Resources */ = {isa = PBXBuildFile; fileRef = 47CB20DB15DDF31B0077DB0D /* discussion3.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		4784C2ED15D60AE6008D0753 /* discussion2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = discussion2.html; path = www/discussion2.html; sourceTree = "<group>"; };
 		478F3CAE15D07B5400E121C9 /* addItem.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addItem.html; path = www/getit/addItem.html; sourceTree = "<group>"; };
 		478F3CC815D0883400E121C9 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = www/getit/js/main.js; sourceTree = "<group>"; };
+		4797538715DC686300076114 /* league.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = league.js; path = www/js/league.js; sourceTree = "<group>"; };
+		4797539515DCAE1400076114 /* myleagues.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = myleagues.html; path = www/myleagues.html; sourceTree = "<group>"; };
+		47BC03B015DC38B700C0FB30 /* wk2vid.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = wk2vid.html; path = www/wk2vid.html; sourceTree = "<group>"; };
+		47CB20DB15DDF31B0077DB0D /* discussion3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = discussion3.html; path = www/discussion3.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* idraft-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "idraft-Info.plist"; path = "../idraft-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +203,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				47CB20DB15DDF31B0077DB0D /* discussion3.html */,
+				4797539515DCAE1400076114 /* myleagues.html */,
+				4797538715DC686300076114 /* league.js */,
+				47BC03B015DC38B700C0FB30 /* wk2vid.html */,
 				4784C2ED15D60AE6008D0753 /* discussion2.html */,
 				476C1DFE15D3609F00A88D0A /* native.js */,
 				478F3CC815D0883400E121C9 /* main.js */,
@@ -426,6 +438,9 @@
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				478F3CAF15D07B5400E121C9 /* addItem.html in Resources */,
 				4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */,
+				47BC03B115DC38B700C0FB30 /* wk2vid.html in Resources */,
+				4797539615DCAE1400076114 /* myleagues.html in Resources */,
+				47CB20DC15DDF31B0077DB0D /* discussion3.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +473,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				478F3CC915D0883400E121C9 /* main.js in Sources */,
 				476C1DFF15D3609F00A88D0A /* native.js in Sources */,
+				4797538815DC686300076114 /* league.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +534,7 @@
 				GCC_PREFIX_HEADER = "idraft/idraft-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "idraft/idraft-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = idraft;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,7 +549,7 @@
 				GCC_PREFIX_HEADER = "idraft/idraft-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "idraft/idraft-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = idraft;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -554,7 +570,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -589,7 +605,7 @@
 					"\"$(OBJROOT)/UninstalledProducts/include\"",
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
