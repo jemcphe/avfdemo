@@ -45,6 +45,7 @@
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		476C1DFF15D3609F00A88D0A /* native.js in Sources */ = {isa = PBXBuildFile; fileRef = 476C1DFE15D3609F00A88D0A /* native.js */; };
 		4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */ = {isa = PBXBuildFile; fileRef = 4784C2ED15D60AE6008D0753 /* discussion2.html */; };
+		4785902B15E42DB00098D276 /* phonegap.js in Sources */ = {isa = PBXBuildFile; fileRef = 4785902A15E42DB00098D276 /* phonegap.js */; };
 		478F3CAF15D07B5400E121C9 /* addItem.html in Resources */ = {isa = PBXBuildFile; fileRef = 478F3CAE15D07B5400E121C9 /* addItem.html */; };
 		478F3CC915D0883400E121C9 /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = 478F3CC815D0883400E121C9 /* main.js */; };
 		4797538815DC686300076114 /* league.js in Sources */ = {isa = PBXBuildFile; fileRef = 4797538715DC686300076114 /* league.js */; };
@@ -128,6 +129,7 @@
 		32CA4F630368D1EE00C91783 /* idraft-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idraft-Prefix.pch"; sourceTree = "<group>"; };
 		476C1DFE15D3609F00A88D0A /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = native.js; path = www/idraft/js/native.js; sourceTree = "<group>"; };
 		4784C2ED15D60AE6008D0753 /* discussion2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = discussion2.html; path = www/discussion2.html; sourceTree = "<group>"; };
+		4785902A15E42DB00098D276 /* phonegap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = phonegap.js; path = www/js/phonegap.js; sourceTree = "<group>"; };
 		478F3CAE15D07B5400E121C9 /* addItem.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addItem.html; path = www/getit/addItem.html; sourceTree = "<group>"; };
 		478F3CC815D0883400E121C9 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = www/getit/js/main.js; sourceTree = "<group>"; };
 		4797538715DC686300076114 /* league.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = league.js; path = www/js/league.js; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4785902A15E42DB00098D276 /* phonegap.js */,
 				47CB20DB15DDF31B0077DB0D /* discussion3.html */,
 				4797539515DCAE1400076114 /* myleagues.html */,
 				4797538715DC686300076114 /* league.js */,
@@ -474,6 +477,7 @@
 				478F3CC915D0883400E121C9 /* main.js in Sources */,
 				476C1DFF15D3609F00A88D0A /* native.js in Sources */,
 				4797538815DC686300076114 /* league.js in Sources */,
+				4785902B15E42DB00098D276 /* phonegap.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

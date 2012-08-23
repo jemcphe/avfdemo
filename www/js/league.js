@@ -8,10 +8,6 @@ window.addEventListener("DOMContentLoaded", function() {
                         // Cordova is ready
                         //
                         
-                        // alert dialog dismissed
-                        function alertDismissed() {
-                        
-                        }
                         //Native Camera Functions
                         var pictureSource;   // picture source
                         var destinationType; // sets the format of returned value
@@ -20,6 +16,12 @@ window.addEventListener("DOMContentLoaded", function() {
                         pictureSource=navigator.camera.PictureSourceType;
                         destinationType=navigator.camera.DestinationType;
                         }
+                        
+                        // alert dialog dismissed
+                        function alertDismissed() {
+                        
+                        }
+                        
                         
                         // Called when a photo is successfully retrieved
                         //

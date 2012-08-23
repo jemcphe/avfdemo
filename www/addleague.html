@@ -24,14 +24,20 @@
 		<header>
 			<img src="img/logo.png" alt="iDRAFT" id="logo" />
 		</header>
-        <a href="index.html"><button type="button">Back To Launch Page!</button></a>
+        <div id="noLeagues" style="display: none">
+            <h2>You don't currently have any Leagues</h2>
+            <button id="noLeagueAdd">Start Here!</button>
+        </div>
+        <a href="index.html"><button type="button">Back To Launch Page!</button></a><br />
+        <!--<button id="captureBtn">Capture Photo</button><br />
+        <img style="display:none;width:60px;height:60px;" id="myImage" src="" />-->
 		<!--Section for text-->
         <form action="#" method="post" id="addLeagueForm">
             <ul id="errors"></ul>
             <ul id="leagueInfo">
-                <li>
-                    <button id="capture">Capture Photo</button>
-                    <img style="display:none;width:60px;height:60px;" id="image" src="" />
+                <li id="leagueImage">
+                    <button type="button" id="captureBtn">Capture Photo</button><br />
+                    <img style="display: none; width: 100px; height: 100px;" id="myImage" src="" />
                 </li>
                 <li>
                    <label for="leaguename">Name of League</label>
@@ -51,9 +57,11 @@
 		</form>
         <input type="button" value="Display Leagues" id="displaybtn" />
         <input type="button" value="Clear All Leagues" id="clearbtn" />
+        <input type="button" value="Add Another League" style="display: none;" id="addNewLeague" />
 		<!--Call Javascript File-->
         <script src="js/libs/jquery-1.8.0.min.js" type="text/javascript"></script>
-        <script src="js/league.js" type="text/javascript"></script>
+        <!--<script src="js/league.js" type="text/javascript"></script>-->
        <!-- <script src="js/native.js" type="text/javascript"></script>-->
+        <script src="js/phonegap.js" type="text/javascript"></script>
 	</body>
 </html>

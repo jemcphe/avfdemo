@@ -153,3 +153,18 @@ footer a:active {
 #players img {
 	width: 100%;
 }
+#containerUl img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+#leagueUl li:first-of-type{
+    display: none;
+}
+#leagueUl{
+    float: right;
+}
+
+
+
+
