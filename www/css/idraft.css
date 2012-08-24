@@ -87,8 +87,8 @@ header {
 #addPlayerForm {
     background-color: #a2d3e6;
     color: #000;
-    width: 70%;
-    margin: 20px 15%;
+    width: 600px;
+    margin: 10px auto 10px 20px;
     border: 5px solid #000;
     border-radius: 10px;
 }
@@ -134,37 +134,98 @@ footer a:active {
 #players a:hover {
 	color: #fff;
 }
-#players ul {
-	padding: 5px;
+#playerContainer {
+    padding: 0px;
+    
 }
-#players ul li {
-	background-color: #666;
-	margin-bottom: 5px;
+#playerContainer li {
+    width: 700px;
+	margin-bottom: 10px;
 }
-#players ul li ul li {
-	margin-bottom: 5px;
-	font-weight: bold;
+#playerData {
+    background-color: #a2d3e6;
+	padding: 0px;
+    margin-left: 20px;
+	border: 3px solid black;
+    border-radius: 10px;
+}
+#playerData img{
+    float: right;
+    margin: 20px;
+    width: 225px;
+    height: 275px;
+    border: 3px solid black;
+    border-radius: 15px;
+}
+#playerData li{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;  
 }
 #errors {
 	font-size: 14px;
 	color: #a31d1d;
 	font-weight: bold;
 }
-#players img {
-	width: 100%;
+/************************** ADD LEAGUE PAGE *************************/
+#addLeagueForm{
+    background-color: #a2d3e6;
+    border: 5px solid #000;
+    border-radius: 10px;
+    width: 480px;
+    margin: 10px auto 10px 20px;
 }
-#containerUl img{
-    float: left;
-    width: 100px;
-    height: 100px;
+
+#containerUl {
+    padding: 0px;
+    width: 480px;
+}
+#containerUl li{
+
+    margin-bottom: 10px;
+}
+#leagueUl {
+    background-color: #a2d3e6;
+    padding: 0px;
+    margin-left: 20px;
+    height: 110px;
+    width: 480px;
+    border: 3px solid #a2d3e6;
+    border-radius: 10px;
+}
+#leagueUl li{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    //display: block;
 }
 #leagueUl li:first-of-type{
     display: none;
 }
-#leagueUl{
-    float: right;
+#leagueUl img{
+    margin: 4px 20px 4px 10px;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #a2d3e6;
+    border-radius: 10px;
 }
-
+/********************** SITE BUTTONS *********************/
+.buttons{
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF5E3), to(#D6B06F));
+    margin: 10px 15px 10px 20px;
+    font-size: 16px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+.formBtn{
+    background-color: #f9a225;
+    font-size: 16px;
+    height: 30px;
+}
 
 
 

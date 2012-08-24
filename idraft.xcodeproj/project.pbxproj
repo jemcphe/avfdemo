@@ -43,7 +43,10 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		471E6DDF15E612B2004DC874 /* idraftIndexpg.js in Sources */ = {isa = PBXBuildFile; fileRef = 471E6DDE15E612B2004DC874 /* idraftIndexpg.js */; };
+		471E6DE115E6C8E3004DC874 /* device.js in Sources */ = {isa = PBXBuildFile; fileRef = 471E6DE015E6C8E3004DC874 /* device.js */; };
 		476C1DFF15D3609F00A88D0A /* native.js in Sources */ = {isa = PBXBuildFile; fileRef = 476C1DFE15D3609F00A88D0A /* native.js */; };
+		477CFE8915E6D07A00F4F83F /* deviceInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 477CFE8815E6D07A00F4F83F /* deviceInfo.html */; };
 		4784C2EE15D60AE6008D0753 /* discussion2.html in Resources */ = {isa = PBXBuildFile; fileRef = 4784C2ED15D60AE6008D0753 /* discussion2.html */; };
 		4785902B15E42DB00098D276 /* phonegap.js in Sources */ = {isa = PBXBuildFile; fileRef = 4785902A15E42DB00098D276 /* phonegap.js */; };
 		478F3CAF15D07B5400E121C9 /* addItem.html in Resources */ = {isa = PBXBuildFile; fileRef = 478F3CAE15D07B5400E121C9 /* addItem.html */; };
@@ -127,7 +130,10 @@
 		30E1352610E2C1420031B30D /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cordova.plist; path = ../Cordova.plist; sourceTree = "<group>"; };
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* idraft-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "idraft-Prefix.pch"; sourceTree = "<group>"; };
+		471E6DDE15E612B2004DC874 /* idraftIndexpg.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = idraftIndexpg.js; path = www/js/idraftIndexpg.js; sourceTree = "<group>"; };
+		471E6DE015E6C8E3004DC874 /* device.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = device.js; path = www/js/device.js; sourceTree = "<group>"; };
 		476C1DFE15D3609F00A88D0A /* native.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = native.js; path = www/idraft/js/native.js; sourceTree = "<group>"; };
+		477CFE8815E6D07A00F4F83F /* deviceInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = deviceInfo.html; path = www/deviceInfo.html; sourceTree = "<group>"; };
 		4784C2ED15D60AE6008D0753 /* discussion2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = discussion2.html; path = www/discussion2.html; sourceTree = "<group>"; };
 		4785902A15E42DB00098D276 /* phonegap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = phonegap.js; path = www/js/phonegap.js; sourceTree = "<group>"; };
 		478F3CAE15D07B5400E121C9 /* addItem.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = addItem.html; path = www/getit/addItem.html; sourceTree = "<group>"; };
@@ -205,6 +211,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				477CFE8815E6D07A00F4F83F /* deviceInfo.html */,
+				471E6DE015E6C8E3004DC874 /* device.js */,
+				471E6DDE15E612B2004DC874 /* idraftIndexpg.js */,
 				4785902A15E42DB00098D276 /* phonegap.js */,
 				47CB20DB15DDF31B0077DB0D /* discussion3.html */,
 				4797539515DCAE1400076114 /* myleagues.html */,
@@ -444,6 +453,7 @@
 				47BC03B115DC38B700C0FB30 /* wk2vid.html in Resources */,
 				4797539615DCAE1400076114 /* myleagues.html in Resources */,
 				47CB20DC15DDF31B0077DB0D /* discussion3.html in Resources */,
+				477CFE8915E6D07A00F4F83F /* deviceInfo.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +488,8 @@
 				476C1DFF15D3609F00A88D0A /* native.js in Sources */,
 				4797538815DC686300076114 /* league.js in Sources */,
 				4785902B15E42DB00098D276 /* phonegap.js in Sources */,
+				471E6DDF15E612B2004DC874 /* idraftIndexpg.js in Sources */,
+				471E6DE115E6C8E3004DC874 /* device.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

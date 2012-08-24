@@ -20,9 +20,12 @@ var saveLink = $("submit");
 var getPhotoLink = $("captureBtn");
 var errMsg = $('errors');
 var anotherLeagueLink = $("addNewLeague");
+//var leagueKey = localStorage.key(i);
+//var value = localStorage.getItem(leagueKey);
+//var obj = JSON.parse(value);
 
 function onDeviceReady() {
-    alert("Device Ready!");
+//    alert("Device Ready!");
     pictureSource=navigator.camera.PictureSourceType;
     destinationType=navigator.camera.DestinationType;
     //getPhotoLink.addEventListener("click", capturePhoto);
@@ -43,7 +46,7 @@ function alertDismissed() {
 // Called when a photo is successfully retrieved
 //
 function onPhotoDataSuccess(imageData) {
-    alert("onPhotoDataSuccess Function has ran");
+    //alert("onPhotoDataSuccess Function has ran");
     // Uncomment to view the base64 encoded image data
     //alert("This is the Data: " + imageData);
     //$('captureBtn').style.display = "none";
@@ -53,13 +56,13 @@ function onPhotoDataSuccess(imageData) {
     // Unhide image elements
     //
     cameraPic.style.display = 'block';
-    alert("Image Should Be Showing");
+    //alert("Image Should Be Showing");
     
     // Show the captured photo
     // The inline CSS rules are used to resize the image
     //
     cameraPic.src = imageData;
-    alert("end of onPhotoDataSuccess Function");
+    //alert("end of onPhotoDataSuccess Function");
 }
 
 // Called when a photo is successfully retrieved
@@ -92,7 +95,7 @@ function capturePhoto() {
 // A button will call this function
 //
 function getPhoto(source) {
-    alert("getPhoto Function Launched!");
+    //alert("getPhoto Function Launched!");
     // Retrieve image file location from specified source
     navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50,
                                 destinationType: destinationType.FILE_URI,
@@ -128,7 +131,6 @@ function toggleControls(n){
 }
 
 
-
 function storeLeague(key){
     //If there is no key, this is a new item and we need to generate a new key
     if(!key){
@@ -149,8 +151,7 @@ function storeLeague(key){
     league.leaguelink					= ["League Link:", $('leaguelink').value];
     //Save Data into Local Storage: Use Stringify to convert our object to a string.
     localStorage.setItem(id, JSON.stringify(league));
-    alert("League Was Saved!");
-    console.log("League Saved");
+    //console.log("League Saved");
     navigator.notification.alert(
                                  'You have successfully added a league!',  // message
                                  alertDismissed,         // callback
@@ -190,7 +191,11 @@ function anotherLeagueBtn(){
 function getData() {
     toggleControls("on");
     if (localStorage.length === 0){
-        alert("Nothing to show you!");
+        navigator.notification.alert("You don't have any leagues. Select ADD LEAGUE to begin!",
+                                     alertDismissed,
+                                     "iDraft",
+                                     "OK"
+                                     );
     }
     console.log("Data Got!!");
     //                        toggleControls("on");
@@ -213,25 +218,25 @@ function getData() {
         var makeLi = document.createElement('li');
         var linksLi = document.createElement('li');
         makeList.appendChild(makeLi);
-        var key = localStorage.key(i);
-        var value = localStorage.getItem(key);
-        var obj = JSON.parse(value);
+        var leagueKey = localStorage.key(i);
+        var value = localStorage.getItem(leagueKey);
+        var leagues = JSON.parse(value);
         var makeSubList = document.createElement('ul');
         makeSubList.setAttribute("id", "leagueUl");
         makeLi.appendChild(makeSubList);
         //getImage(obj.leagues[1], makeSubList);
         var makeImage = document.createElement('img');
         makeImage.setAttribute("id", "myImage");
-        makeImage.src = obj.pic[1];
-        makeList.appendChild(makeImage);
+        makeImage.src = leagues.pic[1];
+        makeSubList.appendChild(makeImage);
         
-        for(var n in obj) {
+        for(var n in leagues) {
             var makeSubLi = document.createElement('li');
             //makeSubList.appendChild(makeImage);
             makeSubList.appendChild(makeSubLi);
-            var optSubText = obj[n][0] +" "+ obj[n][1];
+            var optSubText = leagues[n][0] +" "+ leagues[n][1];
             makeSubLi.innerHTML = optSubText;
-            makeSubList.appendChild(linksLi);
+            //makeSubList.appendChild(linksLi);
         }
     }
     //makeItemLinks(localStorage.key(i), linksLi); //Create our edit and delete buttons/links for each item in localStorage.
@@ -241,24 +246,22 @@ function getData() {
 
 function clearLocal() {
     if(localStorage.length === 0) {
-        alert("Nothing to Clear");
-        //                        navigator.notification.alert(
-        //                                                     "There is no data to clear.",
-        //                                                     alertDismissed,
-        //                                                     "iDraft",
-        //                                                     "OK");
+        navigator.notification.alert("There is no data to clear!",
+                                     alertDismissed,
+                                     "iDraft",
+                                     "OK");
     }else{
         localStorage.clear();
-        alert("Cleared Storage");
-        //                        navigator.notification.alert("All Players have been deleted!",
-        //                                                     alertDismissed,
-        //                                                     "iDraft",
-        //                                                     "OK");
+        //alert("Cleared Storage");
+        navigator.notification.alert("You have deleted all of your leagues.",
+                                     alertDismissed,
+                                     "iDraft",
+                                     "OK"
+                                     );
         window.location.reload();
         return false;
     }
 }
-
 
 function validate (e) {
     //Define the elements we want to check
