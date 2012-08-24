@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 // Example JSONP request with jQuery
                   function loadESPN(){
